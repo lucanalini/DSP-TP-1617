@@ -1,4 +1,5 @@
-function g = sinfn1(n,fs,f)
-x = 1 : n;
-g = sin(2*pi*f*x*1/fs);
+function g = sinfn1(f,Ts)
+u = 0.1; %f = 0, time period = 0.1
+t = (0 : Ts : u-Ts);
+g = sin(2*pi*f*t);
 end
