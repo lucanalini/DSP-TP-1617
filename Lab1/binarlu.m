@@ -22,7 +22,7 @@ for k = 51 : 300
 end
 
 for k = 1 : 50
-    a(k + 200) = g(k);
+    b(k + 200) = g(k);
 end
 
 for k = 51 : 300
@@ -31,9 +31,9 @@ end
 
 
 lu1 = b;
-lu2 = corrcoef(lu1,e);
-lu3 = corrcoef(lu1,f);
-lu4 = corrcoef(lu1,g);
+lu2 = xcorr(lu1,e);
+lu3 = xcorr(lu1,f);
+lu4 = xcorr(lu1,g);
 
 end
 
